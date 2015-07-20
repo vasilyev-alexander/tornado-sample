@@ -55,6 +55,7 @@ class MainHandler(tornado.web.RequestHandler):
 # handles incoming request
 class JsonHandler(tornado.web.RequestHandler):
     def compute_etag(self):
+        # Disable etag computation
         return None
 
     def set_default_headers(self):
