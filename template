@@ -1,0 +1,13 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <h1>Auth users</h1>
+    <ul>
+        {% for user in auth_user %}
+            <li>{{ escape(user['username']) }}</li>
+        {% end %}
+    </ul>
+</body>
+</html>
